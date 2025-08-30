@@ -5,6 +5,8 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000', // backend API base URL
 });
 
+// console.log("API instance created with base URL:", import.meta.env.VITE_BACKEND_URL);
+
 // Add Authorization header automatically
 api.interceptors.request.use((config: any) => {
   const token = localStorage.getItem('token');
