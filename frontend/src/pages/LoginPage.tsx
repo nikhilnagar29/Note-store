@@ -206,13 +206,13 @@ const Login = () => {
       </div>
 
       {/* Right Side - Image (Desktop Only) */}
-      <div className="hidden md:block w-1/2 relative">
+      <div className="hidden md:block w-1/2 relative rounded-2xl">
         <img
-          src="https://hwdlte.com/RvqdLn/blue-wave-bg.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/8/82/Mandel_zoom_05_tail_part.jpg"
           alt="Background"
-          className="absolute inset-0 w-full h-full object-cover rounded-r-lg shadow-lg"
+          className="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-lg"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-20 rounded-r-lg"></div>
+        {/* <div className="absolute inset-0 bg-black bg-opacity-20 rounded-r-lg"></div> */}
       </div>
     </div>
   );
