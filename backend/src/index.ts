@@ -14,12 +14,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173', // Allow your frontend origin
-  credentials: true, // If you need to send cookies or Authorization headers
-};
+// const corsOptions = {
+//   origin: process.env.FRONTEND_URL || 'http://localhost:5173', // Allow your frontend origin
+//   credentials: true, // If you need to send cookies or Authorization headers
+// };
 
-app.use(cors(corsOptions)); // Use cors with options
+app.use(cors()); // Use cors with options
 app.use(express.json());
 
 // Routes
